@@ -479,20 +479,11 @@ https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 ```
 
 ## Flink 
+1. Installation 
 
+- Windows
 
-`Quick Start Maven Project`
-
-
-
-
-1. Flink Installation
-
-**Windows**
-
-**Linux**
-
-**Use Case**
+- Linux
 
 2. Maven Starter Project
 
@@ -500,6 +491,10 @@ https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 
 3. First Program in Flink 
 - https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+
+
+**Other Use Case**
+
 
 
 
