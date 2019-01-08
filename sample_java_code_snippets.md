@@ -255,7 +255,37 @@ public class CreateTable {
 }
 
 ----------------------------------------------------------------------
-HDFS Code Sample {
+
+
+### Java File Read 
+
+```
+public void listFilesForFolder(final File folder) {
+    for (final File fileEntry : folder.listFiles()) {
+        if (fileEntry.isDirectory()) {
+            listFilesForFolder(fileEntry);
+        } else {
+            System.out.println(fileEntry.getName());
+        }
+    }
+}
+
+final File folder = new File("/home/you/Desktop");
+listFilesForFolder(folder);
+Files.walk API is available from Java 8.
+
+try (Stream<Path> paths = Files.walk(Paths.get("/home/you/Desktop"))) {
+    paths
+        .filter(Files::isRegularFile)
+        .forEach(System.out::println);
+} 
+
+```
+
+
+### HDFS Code Sample 
+
+
 https://blog.matthewrathbone.com/2013/12/28/reading-data-from-hdfs-even-if-it-is-compressed
 
 public List<String> readLines(Path location, Configuration conf) throws Exception {
@@ -342,7 +372,8 @@ FileSystem file = FileSystem.get (uri, conf);
       in.read(10,btbuffer, 0, 5);// print 5 character staring from 10th position
 
 
-----------------HDFS  Word Count program in Hadoop
+----------------
+Word Count program in Hadoop
 https://acadgild.com/blog/building-a-hadoop-application-using-maven
 
 import java.io.IOException;
