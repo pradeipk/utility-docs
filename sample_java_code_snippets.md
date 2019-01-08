@@ -3,7 +3,7 @@ HBase Code Sample
 
 # Table of Contents
 1. [HBase Client](#HBase-Client)
-2. [Java File Read](#Java-File-Read)
+2. [Java Sample Code](#Java-Sample-Code)
 
 
 
@@ -13,6 +13,7 @@ HBase Code Sample
 
 #### HBase Client
 
+```
 
 import java.io.IOException;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -115,10 +116,10 @@ public class ScanTable{
 }
 
 ```
--------------------------------------
 
-```
- 
+`Inset into table`
+
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.TableName;
@@ -191,7 +192,7 @@ public class InsertIntoTable {
     }
 }
 
-```
+
 
  
 import org.apache.hadoop.conf.Configuration;
@@ -253,8 +254,9 @@ public class CreateTable {
     }
 }
 }
+```
 
-----------------------------------------------------------------------
+## Java Sample Code
 
 
 ### Java File Read 
@@ -285,6 +287,7 @@ try (Stream<Path> paths = Files.walk(Paths.get("/home/you/Desktop"))) {
 
 ### HDFS Code Sample 
 
+```
 
 https://blog.matthewrathbone.com/2013/12/28/reading-data-from-hdfs-even-if-it-is-compressed
 
@@ -373,7 +376,8 @@ FileSystem file = FileSystem.get (uri, conf);
 
 
 ----------------
-Word Count program in Hadoop
+`Word Count program in Hadoop`
+
 https://acadgild.com/blog/building-a-hadoop-application-using-maven
 
 import java.io.IOException;
@@ -471,11 +475,13 @@ https://hadoop.apache.org/docs/r0.23.11/hadoop-project-dist/hadoop-common/Comman
 https://dzone.com/articles/top-10-hadoop-shell-commands
 https://www.edureka.co/blog/hadoop-cluster-configuration-files/	
 https://creativedata.atlassian.net/wiki/spaces/SAP/pages/52199514/Java+-+Read+Write+files+with+HDFS
-
+https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 }
-	  
-Flink :{	  
+```
 
+## Flink 	  
+```
+`Refrences` 
 https://dzone.com/articles/getting-started-with-batch-processing-using-apache 
 https://ci.apache.org/projects/flink/flink-docs-stable/ops/filesystems.html	  
 https://brewing.codes/2017/10/01/start-flink-batch/
@@ -492,145 +498,12 @@ mvn archetype:generate                               \
       -DarchetypeVersion=1.6.1
 	  
 	}  
-	  
-Java Sample Code:{
-	  
-	  
-	  Article on couchdoop---------------
-https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 
----------
-File Read Code 
-https://www.mkyong.com/java/how-to-read-file-from-java-bufferedreader-example/
+```
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 
-public class ReadFileExample1 {
 
-	private static final String FILENAME = "E:\\test\\filename.txt";
 
-	public static void main(String[] args) {
 
-		BufferedReader br = null;
-		FileReader fr = null;
 
-		try {
-
-			//br = new BufferedReader(new FileReader(FILENAME));
-			fr = new FileReader(FILENAME);
-			br = new BufferedReader(fr);
-
-			String sCurrentLine;
-
-			while ((sCurrentLine = br.readLine()) != null) {
-				System.out.println(sCurrentLine);
-			}
-
-		} catch (IOException e) {
-
-			e.printStackTrace();
-
-		} finally {
-
-			try {
-
-				if (br != null)
-					br.close();
-
-				if (fr != null)
-					fr.close();
-
-			} catch (IOException ex) {
-
-				ex.printStackTrace();
-
-			}
-
-		}
-
-	}
-
-}
-
-----------
-
-package com.mkyong;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
-public class ReadFileExample2 {
-
-	private static final String FILENAME = "E:\\test\\filename.txt";
-
-	public static void main(String[] args) {
-
-		try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
-
-			String sCurrentLine;
-
-			while ((sCurrentLine = br.readLine()) != null) {
-				System.out.println(sCurrentLine);
-			}
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
-}
-}
-
-Maven commands:{
-
-Create a maven project
-	mvn archetype:generate -DarchetypeGroupId=org.apache.flink -DarchetypeArtifactId=flink-quickstart-java -DarchetypeVersion=1.6.1
-	1.3.2
-	mvn clean install -DskipTests
-	mvn clean install -DskipTests -Dfast
-	mvn clean install -DskipTests -Dhadoop.version=2.6.1
-}
-
-shell Commands:{
-
-HDFS :{
-https://www.guru99.com/learn-hdfs-a-beginners-guide.html#1
-}
-HBase {
-
- get 'pradeip','r',{COLUMN => 'name'}
-
-  scan 'pradeip', {COLUMN => 'name:first'}
- 
- 
-./bin/stop-hbase.sh
-exit
-
-Shell Command
-1. drop_all ‘t.*’ 
-disable_all 'raj.*'
-2. 	disable 'emp'
-3.	drop 'emp'
-4. Create		This command creates a table.
-5. List			It lists all the tables in HBase.
-6. Disable		This command disables a table.
-7. Is_disabled	Whereas, it verifies whether a table is disabled.
-8. enable		This command enables a table.
-9. Is_enabled	However, it verifies whether a table is enabled or not.
-
-Let’s discuss Books for HBase
-10. Describe	It shows the description of a table. ---> describe 'table_name'
-11. Alter		This command alters a table.
-12. Exists		This one verifies whether a table exists or not.
-13. Drop			This command drops a table from HBase.
-14. Drop_all	Whereas,  this command drops the tables matching the ‘regex’ given in the command.
-
-xii. Java Admin API
-Previously, to achieve DDL functionalities through programming, when the above commands were not there, Java provides an Admin API. Basically, HBaseAdmin and HTableDescriptor are the two important classes in this package which offers DDL functionalities, under org.apache.hadoop.hbase.client package.
-}
-}
