@@ -1,9 +1,12 @@
-HBase Code Sample {
-----------------------------------------------
+HBase Code Sample 
+================================
+
+
+
+####HBase Client
 
 
 import java.io.IOException;
-
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
@@ -78,38 +81,35 @@ Using this constructor, you can create an object to access an HBase table.
 9	void put(Put put)		Using this method, you can insert data into the table.
 
 
------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+```
 public class ScanTable{
 
    public static void main(String args[]) throws IOException{
-
       // Instantiating Configuration class
       Configuration config = HBaseConfiguration.create();
-
       // Instantiating HTable class
       HTable table = new HTable(config, "emp");
-
       // Instantiating the Scan class
       Scan scan = new Scan();
-
       // Scanning the required columns
       scan.addColumn(Bytes.toBytes("personal"), Bytes.toBytes("name"));
       scan.addColumn(Bytes.toBytes("personal"), Bytes.toBytes("city"));
-
       // Getting the scan result
       ResultScanner scanner = table.getScanner(scan);
-
       // Reading values from scan result
       for (Result result = scanner.next(); result != null; result = scanner.next())
-
       System.out.println("Found row : " + result);
       //closing the scanner
       scanner.close();
    }
 }
+
+```
 -------------------------------------
 
-package com.wordpress.khodeprasad;
+```
  
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -120,10 +120,7 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Table;
 import org.apache.hadoop.hbase.util.Bytes;
  
-/**
- * @author Prasad Khode
- *
- */
+
 public class InsertIntoTable {
  
     public static void main(String[] args) {
@@ -186,7 +183,7 @@ public class InsertIntoTable {
     }
 }
 
----------------------------
+```
 
  
 import org.apache.hadoop.conf.Configuration;
