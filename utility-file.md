@@ -15,6 +15,7 @@
 
 ## Markdown edit shortcut 
 --------------------------------------
+https://www.markdownguide.org/basic-syntax/
 
 - Fenced Code Block	: 	
 
@@ -68,3 +69,15 @@
 ## Example2
 ## Third Example
 ```
+
+
+## Hadoop
+
+### Hadoop Commands
+
+1. jps 		: 
+
+
+
+
+
