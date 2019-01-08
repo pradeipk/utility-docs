@@ -3,8 +3,8 @@ HBase Code Sample
 
 # Table of Contents
 1. [HBase Client](#HBase-Client)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
+2. [Java File Read](#Java-File-Read)
+
 
 
 
