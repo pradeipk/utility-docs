@@ -490,12 +490,29 @@ https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 > mvn archetype:generate -DarchetypeGroupId=org.apache.flink -DarchetypeArtifactId=flink-quickstart-java -DarchetypeVersion=1.6.3
 
 3. First Program in Flink 
-- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+
+4.The following code snippet shows a simple Flink WordCount program that solely uses Hadoop data types, InputFormat, OutputFormat, Mapper, and Reducer functions.
+- https://flink.apache.org/news/2014/11/18/hadoop-compatibility.html
+
+
+
+
 
 
 **Other Use Case**
 
+Dependencies
 
+  - "org.apache.flink" % "flink-core"			: 
+  - "org.apache.flink" % "flink-scala_2.11		:
+  - "org.apache.flink" % "flink-streaming-scala_2.11	:
+  - "org.apache.flink" % "flink-shaded-hadoop2		:
+  - "org.apache.flink" % "flink-yarn			:
+  - "org.apache.flink" % "flink-clients_2.11		:
+  - "org.apache.flink" % "flink-avro			:
+  - "org.apache.flink" % "flink-connector-filesystem	:
+  - "com.amazonaws" % "aws-java-sdk			:
+  - "org.apache.flink" % "flink-statebackend-rocksdb	:
 
 
 **Refrences**
