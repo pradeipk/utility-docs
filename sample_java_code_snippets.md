@@ -2,6 +2,7 @@
 # Table of Contents
 1. [HBase Client](#HBase-Client)
 2. [Java Sample Code](#Java-Sample-Code)
+3. [Flink ](#Flink)
 
 
 
@@ -482,15 +483,32 @@ https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 
 `Quick Start Maven Project`
 
+
+
+
+1. Flink Installation
+
+**Windows**
+
+**Linux**
+
+**Use Case**
+
+2. Maven Starter Project
+
 > mvn archetype:generate -DarchetypeGroupId=org.apache.flink -DarchetypeArtifactId=flink-quickstart-java -DarchetypeVersion=1.6.3
 
-`Refrences`
+3. First Program in Flink 
+- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+
+
+
+**Refrences**
 
 - https://dzone.com/articles/getting-started-with-batch-processing-using-apache 
 - https://ci.apache.org/projects/flink/flink-docs-stable/ops/filesystems.html	  
 - https://brewing.codes/2017/10/01/start-flink-batch/
-- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
-- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html word count example 	  
+- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html-  	  
 - https://data-flair.training/forums/topic/in-which-location-namenode-stores-its-metadata-and-why/	  
 - https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch04.html
 - https://www.baeldung.com/apache-flink
