@@ -1,5 +1,3 @@
-HBase Code Sample 
-================================
 
 # Table of Contents
 1. [HBase Client](#HBase-Client)
