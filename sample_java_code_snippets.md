@@ -477,27 +477,25 @@ https://blog.cloudera.com/blog/2015/02/couchdoop-couchbase-meets-apache-hadoop/
 }
 ```
 
-## Flink 	  
-```
-`Refrences` 
-https://dzone.com/articles/getting-started-with-batch-processing-using-apache 
-https://ci.apache.org/projects/flink/flink-docs-stable/ops/filesystems.html	  
-https://brewing.codes/2017/10/01/start-flink-batch/
-https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
-https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html word count example 	  
-https://data-flair.training/forums/topic/in-which-location-namenode-stores-its-metadata-and-why/	  
-https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch04.html
-https://www.baeldung.com/apache-flink
-https://www.programcreek.com/java-api-examples/index.php?source_dir=flink-master/flink-runtime/src/main/java/org/apache/flink/runtime/fs/hdfs/HadoopFileSystem.java
+## Flink 
 
-mvn archetype:generate                               \
-      -DarchetypeGroupId=org.apache.flink              \
-      -DarchetypeArtifactId=flink-quickstart-java      \
-      -DarchetypeVersion=1.6.1
-	  
-	}  
 
-```
+`Quick Start Maven Project`
+
+> mvn archetype:generate -DarchetypeGroupId=org.apache.flink -DarchetypeArtifactId=flink-quickstart-java -DarchetypeVersion=1.6.3
+
+`Refrences`
+
+- https://dzone.com/articles/getting-started-with-batch-processing-using-apache 
+- https://ci.apache.org/projects/flink/flink-docs-stable/ops/filesystems.html	  
+- https://brewing.codes/2017/10/01/start-flink-batch/
+- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html word count example 	  
+- https://data-flair.training/forums/topic/in-which-location-namenode-stores-its-metadata-and-why/	  
+- https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch04.html
+- https://www.baeldung.com/apache-flink
+- https://www.programcreek.com/java-api-examples/index.php?source_dir=flink-master/flink-runtime/src/main/java/org/apache/flink/runtime/fs/hdfs/HadoopFileSystem.java
+
 
 
 
