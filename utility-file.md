@@ -79,5 +79,11 @@ https://www.markdownguide.org/basic-syntax/
 
 
 
+## Maven
+
+1. Create a Java Project
+- mvn archetype:generate -DgroupId=com.poc.hb2co -DartifactId=HB2CO -DarchetypeArtifactId=maven-archetype-quickstart
+2. build and package as a jar 		:mvn clean package
+3. eclipse build			:mvn clean eclipse:eclipse
 
 
