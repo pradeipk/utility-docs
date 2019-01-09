@@ -19,6 +19,8 @@
 1. download
 2. unzip
 3. run D:\hbase-1.2.9\bin> start-hbase.sh or start-hbase.cmd
+4. ./bin/stop-hbase.sh
+    exit
 
 ``Working With Hbase``
 
@@ -34,6 +36,40 @@
 
 
 ``Pre-requsite``
+
+
+
+
+
+
+``Shell Commands``
+
+
+
+
+Shell Command
+1.a.drop_all ‘t.*’ 
+  b.disable_all 'raj.*'
+2. 	disable 'emp'
+3.	drop 'emp'
+4. Create		This command creates a table.
+5. List			It lists all the tables in HBase.
+6. Disable		This command disables a table.
+7. Is_disabled	Whereas, it verifies whether a table is disabled.
+8. enable		This command enables a table.
+9. Is_enabled	However, it verifies whether a table is enabled or not.
+
+Let’s discuss Books for HBase
+
+10. Describe	It shows the description of a table. ---> describe 'table_name'
+11. Alter		This command alters a table.
+12. Exists		This one verifies whether a table exists or not.
+13. Drop			This command drops a table from HBase.
+14. Drop_all	Whereas,  this command drops the tables matching the ‘regex’ given in the command.
+15. get 'pradeip','r',{COLUMN => 'name'}
+16. scan 'pradeip', {COLUMN => 'name:first'}
+ 
+ 
 
 
 
