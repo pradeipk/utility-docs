@@ -15,6 +15,7 @@
 ``Installation``
 
 > https://www.tutorialspoint.com/hbase/hbase_installation.htm
+> https://www.guru99.com/hbase-installation-guide.html
 
 1. download
 2. unzip
