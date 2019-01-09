@@ -1,4 +1,49 @@
-Tools and commands
+#Tools and commands
+
+
+
+
+
+## HBase
+
+``Overview``
+
+1. HBase is a distributed column-oriented database built on top of the Hadoop file system. It is an open-source project and is horizontally scalable.
+2. It is a part of the Hadoop ecosystem that provides random real-time read/write access to data in the Hadoop File System.
+3. Hadoop can perform only batch processing, and data will be accessed only in a sequential manner. That means one has to search  the entire dataset even for the simplest of jobs. A huge dataset when processed results in another huge data set, which should also be processed sequentially. At this point, a new solution is needed to access any point of data in a single unit of time (random access) and HBase is the solution.
+
+``Installation``
+
+> https://www.tutorialspoint.com/hbase/hbase_installation.htm
+
+1. download
+2. unzip
+3. run D:\hbase-1.2.9\bin> start-hbase.sh or start-hbase.cmd
+
+``Working With Hbase``
+
+- Start HBase Shell 
+  You can start HBase shell using the following command.
+
+  command from dir bin> hbase shell
+  hbase(main):003:0>
+
+  $cd bin
+  $./hbase shell
+  This will give you the HBase Shell Prompt as shown below.
+
+
+``Pre-requsite``
+
+
+
+
+
+``References``
+
+1. https://www.tutorialspoint.com/hbase
+
+
 
 
 ## Flink
