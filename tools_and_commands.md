@@ -23,6 +23,26 @@
 3. run D:\hbase-1.2.9\bin> start-hbase.sh or start-hbase.cmd
 4. ./bin/stop-hbase.sh
     exit
+Three Mode Of installation:
+
+1. Standalone mode installation (No dependency on Hadoop system)
+    - This is default mode of HBase
+    - It runs against local file system
+    - It doesn't use Hadoop HDFS
+    - Only HMaster daemon can run
+    - Not recommended for production environment
+    - Runs in single JVM
+
+2. Pseudo-Distributed mode installation ( Single node Hadoop system + HBase installation)
+    - It runs on Hadoop HDFS
+    - All Daemons run in single node
+    - Recommend for production environment
+    
+3. Fully Distributed mode installation ( MultinodeHadoop environment + HBase installation)
+    - It runs on Hadoop HDFS
+    - All daemons going to run across all nodes present in the cluster
+    - Highly recommended for production environment
+
 
 ``Working With Hbase``
 
