@@ -45,13 +45,10 @@
 ``Shell Commands``
 
 
-
-
-Shell Command
-1.a.drop_all ‘t.*’ 
-  b.disable_all 'raj.*'
-2. 	disable 'emp'
-3.	drop 'emp'
+1. a.drop_all ‘t.*’ 
+   b.disable_all 'raj.* 
+2. disable 'emp'
+3. drop 'emp'
 4. Create		This command creates a table.
 5. List			It lists all the tables in HBase.
 6. Disable		This command disables a table.
@@ -70,10 +67,6 @@ Let’s discuss Books for HBase
 16. scan 'pradeip', {COLUMN => 'name:first'}
  
  
-
-
-
-
 
 ``References``
 
