@@ -3,6 +3,7 @@
 1. [HBase Client](#HBase-Client)
 2. [Java Sample Code](#Java-Sample-Code)
 3. [Flink ](#Flink)
+4. [Java 8](#Java-8)
 
 
 
@@ -92,7 +93,7 @@ Using this constructor, you can create an object to access an HBase table.
 ---------------------------------------------------------------------------------------------------
 
 ```
-public class ScanTable{
+public class ScanTable {
 
    public static void main(String args[]) throws IOException{
       // Instantiating Configuration class
@@ -284,9 +285,9 @@ try (Stream<Path> paths = Files.walk(Paths.get("/home/you/Desktop"))) {
 ```
 
 
-~Java 8~
+### Java 8
 
-1. try-with resources
++ 1. try-with resources
 
 ```
 		import java.io.IOException;
