@@ -4,7 +4,7 @@
 
 
 
-# Table of Contents
+### Table of Contents
 1. [HBase](#HBase)
 2. [Hadoop](#Hadoop)
 3. [Flink](#Flink)
@@ -113,5 +113,18 @@ Let’s discuss Books for HBase
 
 ## Flink
 
+https://flink.apache.org/
+
 1. root@pradeip3785:~/flink-1.6.3# bin/start-cluster.sh
 2. run a jar: root@pradeip3785:~/flink# bin/flink run examples/batch/WordCount.jar -input /home/dataflair/input.txt -output /home/dataflair/output.txt
+
+To stop Flink when you’re done type:
+
+$ ./bin/stop-cluster.sh
+
+https://dzone.com/articles/apache-flink-basic-transformation-example
+
+
+
+
+
