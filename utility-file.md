@@ -1,19 +1,13 @@
--- snippets for routine tasks 
+
 
 
 # Table of Contents
-1. [Example](#example)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-
-## Example
-## Example2
-## Third Example
+1. [Markdown](#markdown)
+2. [Linux](#Linux)
+3. [Maven](#Maven)
 
 
-
-
-## Markdown edit shortcut 
+## Markdown
 --------------------------------------
 https://www.markdownguide.org/basic-syntax/
 
@@ -69,14 +63,6 @@ https://www.markdownguide.org/basic-syntax/
 ## Example2
 ## Third Example
 ```
-
-
-## Hadoop
-
-### Hadoop Commands
-
-1. jps 		: 
-
 
 
 ## Maven
