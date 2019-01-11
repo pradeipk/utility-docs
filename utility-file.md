@@ -73,3 +73,9 @@ https://www.markdownguide.org/basic-syntax/
 3. eclipse build			:mvn clean eclipse:eclipse
 
 
+## Linux
+
+Ubuntu 
+
+
+
