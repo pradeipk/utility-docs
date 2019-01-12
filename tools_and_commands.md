@@ -109,20 +109,74 @@ Let’s discuss Books for HBase
 1. https://www.tutorialspoint.com/hbase
 
 
-
-
 ## Flink
 
+**Tutorials** 
+
 https://flink.apache.org/
+
+https://dzone.com/articles/apache-flink-basic-transformation-example
+
+
+**Commands**
+
+``start`` 
 
 1. root@pradeip3785:~/flink-1.6.3# bin/start-cluster.sh
 2. run a jar: root@pradeip3785:~/flink# bin/flink run examples/batch/WordCount.jar -input /home/dataflair/input.txt -output /home/dataflair/output.txt
 
+``stop``
 To stop Flink when you’re done type:
 
 $ ./bin/stop-cluster.sh
 
-https://dzone.com/articles/apache-flink-basic-transformation-example
+1. Installation 
+
+- Windows
+
+- Linux
+
+2. Maven Starter Project
+
+> mvn archetype:generate -DarchetypeGroupId=org.apache.flink -DarchetypeArtifactId=flink-quickstart-java -DarchetypeVersion=1.6.3
+
+3. First Program in Flink 
+
+4.The following code snippet shows a simple Flink WordCount program that solely uses Hadoop data types, InputFormat, OutputFormat, Mapper, and Reducer functions.
+
+- https://flink.apache.org/news/2014/11/18/hadoop-compatibility.html
+
+
+**Other Use Case**
+
+Dependencies
+
+  - "org.apache.flink" % "flink-core"			        : 
+  - "org.apache.flink" % "flink-scala_2.11		        :
+  - "org.apache.flink" % "flink-streaming-scala_2.11	:
+  - "org.apache.flink" % "flink-shaded-hadoop2		    :
+  - "org.apache.flink" % "flink-yarn			        :
+  - "org.apache.flink" % "flink-clients_2.11		    :
+  - "org.apache.flink" % "flink-avro			        :
+  - "org.apache.flink" % "flink-connector-filesystem	:
+  - "com.amazonaws" % "aws-java-sdk			            :
+  - "org.apache.flink" % "flink-statebackend-rocksdb	:
+
+
+**Refrences**
+
+- https://dzone.com/articles/getting-started-with-batch-processing-using-apache 
+- https://ci.apache.org/projects/flink/flink-docs-stable/ops/filesystems.html	  
+- https://brewing.codes/2017/10/01/start-flink-batch/
+- https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html-  	  
+- https://data-flair.training/forums/topic/in-which-location-namenode-stores-its-metadata-and-why/	  
+- https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch04.html
+- https://www.baeldung.com/apache-flink
+- https://www.programcreek.com/java-api-examples/index.php?source_dir=flink-master/flink-runtime/src/main/java/org/apache/flink/runtime/fs/hdfs/HadoopFileSystem.java
+
+
+
+
 
 
 
