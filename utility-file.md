@@ -72,6 +72,14 @@ https://www.markdownguide.org/basic-syntax/
 2. build and package as a jar 		:mvn clean package
 3. eclipse build			:mvn clean eclipse:eclipse
 
+Web Project
+Create a web project from Maven template maven-archetype-webapp
+mvn archetype:generate 
+	-DgroupId={project-packaging}
+	-DartifactId={project-name}
+	-DarchetypeArtifactId={maven-template} 
+	-DinteractiveMode=false
+
 
 ## Linux
 
